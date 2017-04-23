@@ -1,6 +1,7 @@
-alias ls='ls -GFh'
-alias ll='ls -lAh'
-alias la='ls -A'
+alias ls='ls --color -GFh'
+alias ll='ls --color -lh'
+alias la='ls --color -A'
+alias lla='ls --color -lAh'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
