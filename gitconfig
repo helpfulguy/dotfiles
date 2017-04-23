@@ -1,0 +1,70 @@
+[alias]
+    addremove = !git r && git add . --all
+    aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
+    all = add . --all
+    amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+    br = branch -av
+    brname = !git branch | grep "^*" | awk '{ print $2 }'
+    brdel = branch -D
+    ci = commit
+    changes = "!f() { git log --pretty=format:'* %s' $1..$2; }; f"
+    co = checkout
+    details = log -n1 -p --format=fuller
+    export = archive -o latest.tar.gz -9 --prefix=latest/
+    unstage = reset HEAD --
+    lg = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    in = pull --dry-run
+    root = rev-parse --show-toplevel
+    st = status -sb
+
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
+
+[core]
+    autocrlf = input
+    compression = 9
+    editor = /usr/bin/vim
+    pager = less -FRSX
+
+[diff]
+    mnemonicprefix = true
+
+[merge]
+    log = true
+    ff = false
+
+[push]
+    default = simple
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+
+[url "https://bitbucket.org/"]
+    insteadOf = bb:
+
+[user]
+    name = Michael DeLuca
+    email = mike@helpfulwebguy.com
+
+[include]
+    path = ~/.gitconfig_local
+
