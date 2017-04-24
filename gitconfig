@@ -66,5 +66,5 @@
     email = mike@helpfulwebguy.com
 
 [include]
-    path = ~/.gitconfig_local
+    path = ~/.gitconfig.local
 

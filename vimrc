@@ -76,8 +76,8 @@ set statusline=s%{fugitive#statusline()}
 "---------------------
 " Local customizations
 "---------------------
-" local customizations in ~/.vimrc_local
-let $LOCALFILE=expand("~/.vimrc_local")
+" enable local customizations
+let $LOCALFILE=expand("~/.vimrc.local")
 if filereadable($LOCALFILE)
     source $LOCALFILE
 endif
