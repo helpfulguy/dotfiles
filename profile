@@ -1,7 +1,7 @@
 # ~/.profile: executed by the command interpreter for login shells.
 #
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
-# exists. 
+# exists.
 
 # If running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -14,4 +14,9 @@ fi
 # Set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
+fi
+
+# Enable local customizations
+if [ -f ~/.profile.local]; then
+    source ~/.profile.local
 fi
