@@ -17,6 +17,6 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # Enable local customizations
-if [ -f ~/.profile.local]; then
+if [ -f ~/.profile.local ]; then
     source ~/.profile.local
 fi
