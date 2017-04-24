@@ -16,3 +16,7 @@ ssh.add() {
     ssh-add -t 86400 ~/.ssh/id_$1
 }
 
+# Enable local customizations
+if [ -f ~/.bash_aliases_local]; then
+    source ~/.bash_aliases_local
+fi
