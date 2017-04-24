@@ -86,6 +86,6 @@ if ! shopt -oq posix; then
 fi
 
 # Enable local customizations
-if [ -f ~/.bash_local ]; then
-    source ~/.bash_local
+if [ -f ~/.bashrc_local ]; then
+    source ~/.bashrc_local
 fi
