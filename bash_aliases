@@ -3,6 +3,8 @@ alias ll='ls --color -lh'
 alias la='ls --color -A'
 alias lla='ls --color -lAh'
 
+alias reload='~/.dotfiles/install'
+
 # up 'n' folders
 alias ..='cd ..'
 alias ...='cd ../..'
