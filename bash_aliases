@@ -17,6 +17,6 @@ ssh.add() {
 }
 
 # Enable local customizations
-if [ -f ~/.bash_aliases_local]; then
+if [ -f ~/.bash_aliases_local ]; then
     source ~/.bash_aliases.local
 fi
