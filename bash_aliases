@@ -4,6 +4,7 @@ alias la='ls --color -A'
 alias lla='ls --color -lAh'
 
 alias reload='~/.dotfiles/install'
+alias cap='bundle exe cap'
 
 # up 'n' folders
 alias ..='cd ..'
