@@ -47,7 +47,7 @@
 
 [merge]
     log = true
-    ff = false
+    ff = true
 
 [push]
     default = simple
