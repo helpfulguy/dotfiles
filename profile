@@ -16,7 +16,13 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# Add composer vendor bin if it exists
+if [ -d "$HOME/bin" ]; then
+    PATH="$HOME/.composer/vendor/bin:$PATH"
+fi
+
 # Enable local customizations
 if [ -f ~/.profile.local ]; then
     source ~/.profile.local
 fi
+
