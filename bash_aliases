@@ -1,7 +1,7 @@
 alias c='clear'
 alias h='cd ~'
 
-alias ls='ls --color -GFh'
+alias ls='ls --color -Fh'
 alias ll='ls --color -lh'
 alias la='ls --color -A'
 alias lla='ls --color -lAh'
