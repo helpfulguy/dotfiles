@@ -5,11 +5,15 @@
 - clean: ['~']
 
 - link:
-    ~/.bashrc: 
+    ~/.bashrc:
         force: true
-    ~/.bash_aliases: 
+    ~/.bash_aliases:
         force: true
     ~/.gitconfig:
+        force: true
+    ~/.gitconfig:
+        force: true
+    ~/.gitmessage:
         force: true
     ~/.profile:
         force: true
