@@ -41,7 +41,7 @@
     compression = 9
     editor = /usr/bin/vim
     pager = less -FRSX
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore_global
 
 [diff]
     mnemonicprefix = true

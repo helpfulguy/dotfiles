@@ -11,7 +11,7 @@
         force: true
     ~/.gitconfig:
         force: true
-    ~/.gitconfig:
+    ~/.gitignore_global:
         force: true
     ~/.gitmessage:
         force: true
